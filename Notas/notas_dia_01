@@ -1,0 +1,46 @@
+TCP = protocolo de control de transmisiones (este es basado con conexiones)
+UDP = Protocolo de datagramas de usuario (este es sin conexiones)
+
+TCP es mas fiable, pero transfiere dato mas despacio.
+UDP es menos fiable, pero funciona mas rapido.
+
+cada uno es adecuado para distintos tipos de transferencia de datos
+
+el tcp crea una linea directa de comunicacion, asi garantiza la transmision fiable de todos los datos.
+luego se verifica la recepcion para asegurar la trasnferencia de los datos.
+
+el udp no crea una linea directa o conexion, no hay garantia que la transmision llego ni tampoco comprobar errores,
+esto puede provocar que los datos puedan perderse en la transmision
+
+en tcp si es que los datos no llega, se puede retransmitir los datos
+en udp no se puede, si se pierden ahi quedan y no se pueden recuperar
+
+tcp se comprueba que la transmision se haga sin errores de forma exhaustiva
+udp cubre errores basicos, pero no evita todos los errores
+
+tcp no es compatible con transmisiones
+udp es compatible con transmisiones
+
+tcp entrega datos mas lento, pero asegura que llegan 
+udp es mas rapido, pero no hay garantia que lleguen todos los datos
+
+
+el tcp es mejor cuando se quiere asegurar que lleguen los datos
+
+mandar correos, imagenes, transferir archivos, navegar en la web
+
+el udp es mejor cuando se prioriza la velocidad a la que llegan estos datos y no haya baja latencia, acciones en tiempo real
+
+jugar videojuegos, hacer transmisiones en vivo, videollamada
+
+el protocolo que se usa para ver ping es imcp
+
+puertos:
+22 ssh (secure shell) TCP
+53 dns (Sistemas de nombres de Dominio) TCP/UDP
+80 Http (WEB, sin sifrar) TCP
+443 HTTPS (WEB, ENCRIPTADO) TCP
+445 SMB RDP(ESCRITORIO REMOTO) TCP 
+
+IP SIGNIFICA PROTOCOLO DE INTERNET
+DIRECCION MAC: (CONTROL DE ACCESO A MEDIOS)
